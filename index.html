@@ -1,0 +1,1153 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Option 1: Include in HTML -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+
+    <title>Cake Shop</title>
+
+    <!-- shadow effect for navbar and section end  -->
+    <style>
+        .navbar {
+            box-shadow: 0px 3px 3px -3px rgba(0, 0, 0, .5);
+        }
+
+        .muishadow {
+
+            box-shadow: 0px 3px 3px -3px rgba(0, 0, 0, .5);
+        }
+
+        .buttonhover:hover {
+            
+            margin-left: 0px;
+            -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+            -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+        
+        }
+
+        
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <!-- navbar  -->
+    <nav class="navbar navbar-expand-md bg-white navbar-light py-2 ps-3 fixed-top">
+        <!-- navbar collapse for sm screen  -->
+        <div class="container">
+            <a href="#" class="navbar-brand "> <img class='d-none d-sm-block' src="img/logo.png" style="width:200px; ">
+                <!-- icon for sm screen  -->
+                <img class='d-block d-sm-none' src="img/logo.png" style="width:130px; "> <!-- icon for lg screen  -->
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <!-- hamburger menu  -->
+                <span class="navbar-toggler-icon"> </span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <!-- navigation tabs -->
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a href="#Home" class="nav-link"> <span class='textcolor'>Home </span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#aboutus" class="nav-link"> <span class='textcolor'> About us </span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#cakes" class="nav-link"> <span class='textcolor'>Cakes</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contacts" class="nav-link"> <span class='textcolor'>Contacts</span></a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- Home page  -->
+
+    <section id="Home" class="muishadow">
+        <div style="padding-top:30px">
+            <!-- padding adjustment for sticky navbar  -->
+
+            <div class="container p-4">
+
+                <div class="row row-cols-1 row-cols-lg-2 pt-5">
+                    <!-- 1 col for sm and 2 col for lg  -->
+
+
+                    <!-- image only for sm screen -->
+                    <div class=" col d-block d-sm-none pb-5">
+                        <img src="img/main_img.jpg" style="width: 800px;" class="img-fluid">
+                    </div>
+
+                    <!-- for both sm and lg screen -->
+                    <div class="col">
+
+                        <!-- Heading and Texts -->
+                        <h3>
+                            Eat More Cakes <br />
+                            <h5>A party without cake is just a meeting</h5>
+                        </h3>
+                        <p class="lead">
+                            Serving freshly baked cake to our customers since 2015. Our Cake Shop Offers the
+                            best cakes that you can find around the city. Try some and we promise you wont be
+                            disappointed.
+                        </p>
+
+                        <!-- Order Button -->
+
+                        <a href="#cakes" class="btn btn-dark mt-1 ">
+                            <i class="bi bi-chevron-right"></i> Order Now !!!
+                        </a>
+
+                        <!-- social media flex -->
+
+                        <h3 class='pt-5 pt-lg-4 '>Follow us in Social Medias </h3>
+
+                        <div class="d-flex justify-content-start pt-3">
+                            <div class="pe-3 buttonhover"><a href="#!">
+                                    <img src="img/socialmedias/fb.png" style="width: 50px;">
+                                </a></div>
+                            <div class="px-3 buttonhover"><a href="#!">
+                                    <img src="img/socialmedias/insta.png" style="width: 50px;">
+                                </a></div>
+                            <div class="px-3 buttonhover"><a href="#!">
+                                    <img src="img/socialmedias/tiktok.png" style="width: 50px;">
+                                </a></div>
+                            <div class="px-3 buttonhover"><a href="#!">
+                                    <img src="img/socialmedias/wapp.png" style="width: 50px;">
+                                </a>
+                            </div>
+                        </div>
+
+
+
+                        <!-- App flex -->
+                        <h3 class='pt-4'>Download our app now!</h3>
+
+                        <div class="d-flex justify-content-start pt-3">
+                            <div class="pe-3 buttonhover"><a href="#!">
+                                    <img src="img/gplay.png" style="width: 140px;">
+                                </a>
+                            </div>
+                            <div class="pe-3 buttonhover"><a href="#!">
+                                    <img src="img/istore.png" style="width: 140px;">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col text text-center">
+
+                        <!-- image only for lg screen -->
+                        <div class="d-none d-lg-block ">
+                            <img src="img/main_img.jpg" style="width: 500px;" class="img-fluid">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pb-4"></div>
+
+    </section>
+
+
+    <!--About us Page-->
+
+    <section id="aboutus" class=" muishadow p-3 pt-md-5 p-lg-5 ">
+        <div style="padding-top: 60px;" class="container ">
+            <div class="row align-items-center justify-content-between pb-5">
+
+                <div class="col-md pt-2 pt-sm-4 pt-md-0 text-lg-right">
+                    <h2 class='textcolor pb-3'>
+                        Who are we?
+                    </h2>
+                    <p class="lead">
+                        The "Cake Shop" is a Jordanian Brand that started as a small family business.
+                    </p>
+                    <p class="lead"> The owners are Dr. Iyad Sultan and Dr. Sereen Sharabati, supported by a staff
+                        of 80 employees.
+                    </p>
+                    <p class="lead">Although not small any more, the business tries to keep the family atmosphere
+                        where we care not only about our company, our products and our staff, but also we consider
+                        each "customer" a member in this family of "cake shoppers".
+                    </p>
+                    <p class="lead">Our mission is to make people happy. Making delicious cakes, having relaxing
+                        chairs in a smoking free environment and keeping our prices reasonable are all different
+                        ways to achieve this goal.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Question Accordion -->
+        <div class="container">
+            <h2 class=" mb-4">Frequently Asked Questions</h2>
+            <div class="accordion accordion-flush" id="questions">
+                <!-- Item 1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-one">
+                            Where exactly are you located?
+                        </button>
+                    </h2>
+                    <div id="question-one" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body">
+                            Location of the Cakeshop is Durbarmarg, View On Map (Hattisar Road, 44600, Kathmandu,
+                            Nepal).
+                            Durbar Marg or Durbarmarg is a street in Nepali city of Kathmandu. It is considered as the
+                            heart of Kathmandu city.
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-two">
+                            How much does it cost ?
+                        </button>
+                    </h2>
+                    <div id="question-two" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body">
+                            Our cakes generally costs between Rs.1000 to Rs.10,000 or more depending on the type and
+                            size of the cake. The customized cake costs more than the usual ones.
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-three">
+                            What do I need to Know?
+                        </button>
+                    </h2>
+                    <div id="question-three" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body">
+                            When ordering a cake from us, Make sure to give us the correct description of the cakes. If
+                            you want it delivered, make sure to give us correct address and the time when you the cake.
+                            It takes us 3-5 hours to prepare them so you will need to place order respectively.
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 4 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-four">
+                            How do I order?
+                        </button>
+                    </h2>
+                    <div id="question-four" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body">
+                            You can order through our website, our social media pages or you can directly call us at
+                            +977 98510 99764 for quick response. Make sure to give us the correct description of the
+                            cakes. If you want it delivered, make sure to give us correct address and the time when you
+                            the cake.
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 5 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-five">
+                            Do you deliver at home?
+                        </button>
+                    </h2>
+                    <div id="question-five" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body">
+                            Yes, we do deliver at your home. If you want it delivered, make sure to give us correct
+                            address and the time when you the cake. You can make payments before or after the delivery.
+                            We accept cards, esewa, khalti, fonepay or simply cash.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="pb-3"></div>
+    </section>
+
+
+    <!--Cakes Page-->
+    <section id="cakes" class=" muishadow p-3 pt-md-5 p-lg-5">
+
+        <div style="padding-top: 60px;" class="container">
+
+            <h2 class='textcolor pt-0 pt-sm-3 pt-md-0 pt-lg-0 pb-2'>
+                Which flavour do you like?
+            </h2>
+
+
+
+            <!--only for xs-->
+            <div class="d-block d-sm-none ">
+
+
+                <!--first row 2 Cakes Page-->
+                <div class="d-flex justify-content-start align-items-center pt-3">
+
+                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; height: 17rem;">
+                        <img src="img/cakes/bf.jpg" style="width:210 px;" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5> Black Forest<br />
+                                <h6>Rs.1000 </h6>
+                            </h5>
+
+                            <a href="#!" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                    <div class="pe-3"></div>
+
+                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; height: 17rem;">
+                        <img src="img/cakes/ch.png" style="width:210 px;" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5> Chocolate Cake<br />
+                                <h6>Rs.1100 </h6>
+                            </h5>
+
+                            <a href="#!" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                    <div class="pe-0"></div>
+
+                </div>
+
+                <!--second row 2 Cakes Page-->
+                <div class="d-flex justify-content-start align-items-center pt-3">
+                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; height: 17rem;">
+                        <img src="img/cakes/sb.png" style="width:210 px;" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5> Strawberry Cake<br />
+                                <h6>Rs.1300 </h6>
+                            </h5>
+
+                            <a href="#!" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                    <div class="pe-3"></div>
+
+                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; height: 17rem;">
+                        <img src="img/cakes/wf.png" style="width:210 px;" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5> White Forest<br />
+                                <h6>Rs.1100 </h6>
+                            </h5>
+
+                            <a href="#!" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                    <div class="pe-0"></div>
+
+
+                </div>
+
+                <!--third row here-->
+                <div class="d-flex justify-content-start align-items-center pt-3">
+                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; height: 17rem;">
+                        <img src="img/cakes/kc.png" style="width:210 px;" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5> KitKat Cake<br />
+                                <h6>Rs.1900 </h6>
+                            </h5>
+
+                            <a href="#!" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                    <div class="pe-3"></div>
+
+                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; height: 17rem;">
+                        <img src="img/cakes/pap.png" style="width:210 px;" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5> Pineapple Cake<br />
+                                <h6>Rs.1700 </h6>
+                            </h5>
+
+                            <a href="#!" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                    <div class="pe-0"></div>
+                </div>
+
+                <!--Fourth row here-->
+                <div class="d-flex justify-content-start align-items-center pt-3">
+                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; height: 17rem;">
+                        <img src="img/cakes/mg.png" style="width:210 px;" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5> Mango Cake<br />
+                                <h6>Rs.1500 </h6>
+                            </h5>
+
+                            <a href="#!" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                    <div class="pe-3"></div>
+
+                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; height: 17rem;">
+                        <img src="img/cakes/rv.png" style="width:210 px;" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5> Red Velvet Cake<br />
+                                <h6>Rs.1400 </h6>
+                            </h5>
+
+                            <a href="#!" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                    <div class="pe-0"></div>
+                </div>
+
+
+            </div>
+
+
+
+            <!--only for md-->
+            <div class="d-none d-sm-block d-lg-none">
+
+
+                <!--first row 3 Cakes Page-->
+                <div class="d-flex justify-content-start align-items-center pt-4">
+
+                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; height: 18rem;">
+                        <img src="img/cakes/bf.jpg" style="width:210 px;" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5> Black Forest<br />
+                                <h6>Rs.1000 </h6>
+                            </h5>
+
+                            <a href="#!" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                    <div class="pe-4"></div>
+
+                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; height: 18rem;">
+                        <img src="img/cakes/ch.png" style="width:210 px;" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5> Chocolate Cake<br />
+                                <h6>Rs.1100 </h6>
+                            </h5>
+
+                            <a href="#!" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                    <div class="pe-4"></div>
+
+                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; height: 18rem;">
+                        <img src="img/cakes/mg.png" style="width:210 px;" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5> Mango Cake<br />
+                                <h6>Rs.1500 </h6>
+                            </h5>
+
+                            <a href="#!" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                    <div class="pe-0"></div>
+
+                </div>
+
+                <!--second column 3 Cakes Page-->
+                <div class="d-flex justify-content-start align-items-center pt-4">
+                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; height: 18rem;">
+                        <img src="img/cakes/sb.png" style="width:210 px;" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5> Strawberry Cake<br />
+                                <h6>Rs.1300 </h6>
+                            </h5>
+
+                            <a href="#!" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                    <div class="pe-4"></div>
+
+                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; height: 18rem;">
+                        <img src="img/cakes/wf.png" style="width:210 px;" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5> White Forest<br />
+                                <h6>Rs.1100 </h6>
+                            </h5>
+
+                            <a href="#!" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                    <div class="pe-4"></div>
+
+                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; height: 18rem;">
+                        <img src="img/cakes/rv.png" style="width:210 px;" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5> Red Velvet<br />
+                                <h6>Rs.1400 </h6>
+                            </h5>
+
+                            <a href="#!" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                    <div class="pe-0"></div>
+
+
+                </div>
+
+                <!--third row here-->
+                <div class="d-flex justify-content-start align-items-center pt-4">
+                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; height: 18rem;">
+                        <img src="img/cakes/kc.png" style="width:210 px;" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5> KitKat Cake<br />
+                                <h6>Rs.1900 </h6>
+                            </h5>
+
+                            <a href="#!" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                    <div class="pe-4"></div>
+
+                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; height: 18rem;">
+                        <img src="img/cakes/pap.png" style="width:210 px;" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5> Pineapple Cake<br />
+                                <h6>Rs.1700 </h6>
+                            </h5>
+
+                            <a href="#!" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                    <div class="pe-4"></div>
+
+                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; height: 18rem;">
+                        <img src="img/cakes/bs.png" style="width:210 px;" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5> Butter Scotch<br />
+                                <h6>Rs.1300 </h6>
+                            </h5>
+
+                            <a href="#!" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                    <div class="pe-0"></div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+            <!--only for lg-->
+            <div class="d-none d-xl-block">
+
+                <!--first row 4 Cakes Page-->
+                <div class="d-flex justify-content-start align-items-center pt-4">
+
+                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; height: 20rem;">
+                        <img src="img/cakes/bf.jpg" style="width:210 px;" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5> Black Forest<br />
+                                <h6>Rs.1000 </h6>
+                            </h5>
+
+                            <a href="#!" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                    <div class="pe-3"></div>
+
+                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; height: 20rem;">
+                        <img src="img/cakes/ch.png" style="width:210 px;" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5> Chocolate Cake<br />
+                                <h6>Rs.1100 </h6>
+                            </h5>
+
+                            <a href="#!" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                    <div class="pe-3"></div>
+
+                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; height: 20rem;">
+                        <img src="img/cakes/mg.png" style="width:210 px;" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5> Mango Cake<br />
+                                <h6>Rs.1500 </h6>
+                            </h5>
+
+                            <a href="#!" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                    <div class="pe-3"></div>
+
+                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; height: 20rem;">
+                        <img src="img/cakes/pap.png" style="width:210 px;" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5> Pineaple Cake<br />
+                                <h6>Rs.1700 </h6>
+                            </h5>
+
+                            <a href="#!" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--second row 4 Cakes Page-->
+                <div class="d-flex justify-content-start align-items-center pt-3">
+                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; height: 20rem;">
+                        <img src="img/cakes/sb.png" style="width:210 px;" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5> Strawberry Cake<br />
+                                <h6>Rs.1300 </h6>
+                            </h5>
+
+                            <a href="#!" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                    <div class="pe-3"></div>
+
+                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; height: 20rem;">
+                        <img src="img/cakes/wf.png" style="width:210 px;" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5> White Forest<br />
+                                <h6>Rs.1100 </h6>
+                            </h5>
+
+                            <a href="#!" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                    <div class="pe-3"></div>
+
+                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; height: 20rem;">
+                        <img src="img/cakes/rv.png" style="width:210 px;" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5> Red Velvet<br />
+                                <h6>Rs.1400 </h6>
+                            </h5>
+
+                            <a href="#!" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                    <div class="pe-3"></div>
+
+                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; height: 20rem;">
+                        <img src="img/cakes/kc.png" style="width:210 px;" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5> Kitkat Cake<br />
+                                <h6>Rs.1900 </h6>
+                            </h5>
+
+                            <a href="#!" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--third column add here-->
+
+            </div>
+
+            <h2 class='textcolor pt-5 pt-sm-5 pt-md-5 pt-lg-5 pb-3 pb-sm-2'>
+                Party supplies and Accessories
+            </h2>
+
+            <!--only for xs-->
+            <div class="d-block d-sm-none ">
+
+
+                <!--first row  here .... Page-->
+                <div class="d-flex justify-content-start align-items-center pt-3">
+
+                    <div class="card text-center align-items-center " style="width: 20rem;">
+                        <img src="img/party/baloons.jpg" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5> Baloons<br />
+                                <h6>Rs.150 </h6>
+                            </h5>
+
+                            <a href="#!" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                    <div class="pe-3"></div>
+
+                    <div class="card text-center align-items-center" style="width: 20rem;">
+                        <img src="img/party/redhearts.jpg" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5>Red Hearts<br />
+                                <h6>Rs.200 </h6>
+                            </h5>
+
+                            <a href="#!" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                    <div class="pe-0"></div>
+
+                </div>
+
+                <!--second row here...... Page-->
+                <div class="d-flex justify-content-start align-items-center pt-3">
+                    <div class="card text-center align-items-center " style="width: 20rem;">
+                        <img src="img/party/bdaycandles.jpg" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5>Candels<br />
+                                <h6>Rs.130 </h6>
+                            </h5>
+
+                            <a href="#!" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                    <div class="pe-3"></div>
+
+                    <div class="card text-center align-items-center " style="width: 20rem;">
+                        <img src="img/party/bdayflag.jpg" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5> Flags<br />
+                                <h6>Rs.500 </h6>
+                            </h5>
+
+                            <a href="#!" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                    <div class="pe-0"></div>
+
+
+                </div>
+
+                <!--third row here-->
+                <div class="d-flex justify-content-start align-items-center pt-3">
+                    <div class="card text-center align-items-center" style="width: 20rem;">
+                        <img src="img/party/colorsmoke.jpg" style="width:210 px;" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5> Smokes <br />
+                                <h6>Rs.900 </h6>
+                            </h5>
+
+                            <a href="#!" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                    <div class="pe-3"></div>
+
+                    <div class="card text-center align-items-center" style="width: 20rem;">
+                        <img src="img/party/crown.jpg" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5>Crown<br />
+                                <h6>Rs.700 </h6>
+                            </h5>
+
+                            <a href="#!" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                    <div class="pe-0"></div>
+                </div>
+
+                <!--Fourth row here-->
+                <div class="d-flex justify-content-start align-items-center pt-3">
+                    <div class="card text-center align-items-center " style="width: 20rem; ">
+                        <img src="img/party/partyhats.jpg" " class=" card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5> Party Hats<br />
+                                <h6>Rs.150 </h6>
+                            </h5>
+
+                            <a href="#!" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                    <div class="pe-3"></div>
+
+                    <div class="card text-center align-items-center " style="width: 20rem; ">
+                        <img src="img/party/partypooper.jpg" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5> Partypooper<br />
+                                <h6>Rs.400 </h6>
+                            </h5>
+
+                            <a href="#!" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                    <div class="pe-0"></div>
+                </div>
+
+
+            </div>
+
+
+
+            <!--only for md-->
+            <div class="d-none d-sm-block d-lg-none">
+
+
+                <!--first row 4 Cakes Page-->
+                <div class="d-flex justify-content-start align-items-center pt-4">
+
+                    <div class="card text-center align-items-center " style="width: 20rem;">
+                        <img src="img/party/baloons.jpg" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5> Baloons<br />
+                                <h6>Rs.150 </h6>
+                            </h5>
+
+                            <a href="#!" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                    <div class="pe-4"></div>
+
+                    <div class="card text-center align-items-center" style="width: 20rem;">
+                        <img src="img/party/redhearts.jpg" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5>Red Hearts<br />
+                                <h6>Rs.200 </h6>
+                            </h5>
+
+                            <a href="#!" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                    <div class="pe-4"></div>
+
+                    <div class="card text-center align-items-center " style="width: 20rem;">
+                        <img src="img/party/bdaycandles.jpg" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5>Candels<br />
+                                <h6>Rs.130 </h6>
+                            </h5>
+
+                            <a href="#!" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                    <div class="pe-0"></div>
+
+                </div>
+
+                <!--second column 4 Cakes Page-->
+                <div class="d-flex justify-content-start align-items-center pt-4">
+                    <div class="card text-center align-items-center " style="width: 20rem;">
+                        <img src="img/party/bdayflag.jpg" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5> Flags<br />
+                                <h6>Rs.500 </h6>
+                            </h5>
+
+                            <a href="#!" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                    <div class="pe-4"></div>
+
+                    <div class="card text-center align-items-center" style="width: 20rem;">
+                        <img src="img/party/colorsmoke.jpg" style="width:210 px;" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5> Smokes <br />
+                                <h6>Rs.900 </h6>
+                            </h5>
+
+                            <a href="#!" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                    <div class="pe-4"></div>
+
+                    <div class="card text-center align-items-center" style="width: 20rem;">
+                        <img src="img/party/crown.jpg" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5>Crown<br />
+                                <h6>Rs.700 </h6>
+                            </h5>
+
+                            <a href="#!" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                    <div class="pe-0"></div>
+
+
+                </div>
+
+                <!--third column here-->
+                <div class="d-flex justify-content-start align-items-center pt-4">
+                    <div class="card text-center align-items-center " style="width: 20rem; ">
+                        <img src="img/party/partyhats.jpg" " class=" card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5> Party Hats<br />
+                                <h6>Rs.150 </h6>
+                            </h5>
+
+                            <a href="#!" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                    <div class="pe-4"></div>
+
+                    <div class="card text-center align-items-center " style="width: 20rem; ">
+                        <img src="img/party/partypooper.jpg" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5> Partypooper<br />
+                                <h6>Rs.400 </h6>
+                            </h5>
+
+                            <a href="#!" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                    <div class="pe-4"></div>
+
+                    <div class="card text-center align-items-center " style="width: 20rem; ">
+                        <img src="img/party/spray.jpg" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5> Spray<br />
+                                <h6>Rs.600 </h6>
+                            </h5>
+
+                            <a href="#!" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                    <div class="pe-0"></div>
+                </div>
+
+
+            </div>
+
+            <!--only for lg-->
+            <div class="d-none d-xl-block">
+
+                <!--first column 4 Cakes Page-->
+                <div class="d-flex justify-content-start align-items-center pt-3">
+
+                    <div class="card text-center align-items-center " style="width: 20rem;">
+                        <img src="img/party/baloons.jpg" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5> Baloons<br />
+                                <h6>Rs.150 </h6>
+                            </h5>
+
+                            <a href="#!" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                    <div class="pe-3"></div>
+
+                    <div class="card text-center align-items-center" style="width: 20rem;">
+                        <img src="img/party/redhearts.jpg" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5>Red Hearts<br />
+                                <h6>Rs.200 </h6>
+                            </h5>
+
+                            <a href="#!" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                    <div class="pe-3"></div>
+
+                    <div class="card text-center align-items-center " style="width: 20rem;">
+                        <img src="img/party/bdaycandles.jpg" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5>Candels<br />
+                                <h6>Rs.130 </h6>
+                            </h5>
+
+                            <a href="#!" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                    <div class="pe-3"></div>
+
+                    <div class="card text-center align-items-center " style="width: 20rem;">
+                        <img src="img/party/bdayflag.jpg" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5> Flags<br />
+                                <h6>Rs.500 </h6>
+                            </h5>
+
+                            <a href="#!" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--second column 4 Cakes Page-->
+                <div class="d-flex justify-content-start align-items-center pt-3">
+                    <div class="card text-center align-items-center" style="width: 20rem;">
+                        <img src="img/party/colorsmoke.jpg" style="width:210 px;" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5> Smokes <br />
+                                <h6>Rs.900 </h6>
+                            </h5>
+
+                            <a href="#!" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                    <div class="pe-3"></div>
+
+                    <div class="card text-center align-items-center" style="width: 20rem;">
+                        <img src="img/party/crown.jpg" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5>Crown<br />
+                                <h6>Rs.700 </h6>
+                            </h5>
+
+                            <a href="#!" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                    <div class="pe-3"></div>
+
+                    <div class="card text-center align-items-center " style="width: 20rem; ">
+                        <img src="img/party/partyhats.jpg" " class=" card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5> Party Hats<br />
+                                <h6>Rs.150 </h6>
+                            </h5>
+
+                            <a href="#!" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                    <div class="pe-3"></div>
+
+                    <div class="card text-center align-items-center " style="width: 20rem; ">
+                        <img src="img/party/partypooper.jpg" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5> Partypooper<br />
+                                <h6>Rs.400 </h6>
+                            </h5>
+
+                            <a href="#!" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--third column add here-->
+
+            </div>
+            <div class="pb-4"></div>
+    </section>
+
+
+
+
+
+    <!--contacts page-->
+    <section id='contacts' class="muishadow p-3 p-lg-5">
+        <div style="padding-top: 60px;" class="container">
+            <h2 class='textcolor pb-3'>
+                Contact Us
+            </h2>
+
+            <form>
+                <div class="mb-3">
+                    <label for="username" class="form-label">Full Name</label>
+                    <input type="username" class="form-control" id="exampleInputusername">
+
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleInputmessage" class="form-label">Your Message</label>
+                    <input type="message" class="form-control" id="exampleInputEmail1">
+                    <div id="message" class="form-text">We'll review your message as soon as possible.</div>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+    </section>
+
+    <div class="muishadow ">
+        <!-- Footer -->
+        <footer class="text-center text-xl-center bg-light text-muted">
+            <!-- Copyright -->
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                © 2021 Copyright:
+                <a class="text-reset fw-bold" href="https://mdbootstrap.com/">www.cakeshop.com</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+
+
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
