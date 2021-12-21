@@ -37,6 +37,20 @@
             transition: .3s ease-in-out;
 
         }
+
+        .form-control:focus {
+            border-color: #D3D3D3;
+            box-shadow: 0 0 0 0.2rem #D3D3D3;
+        }
+
+        .nav-control:focus {
+            border-color: #D3D3D3;
+            box-shadow: 0 0 0 0.1rem #D3D3D3;
+        }
+
+        input[type="search"]::-webkit-search-cancel-button {
+            -webkit-appearance:none;
+        }
     </style>
 
 </head>
@@ -45,23 +59,54 @@
 <body>
 
     <!-- navbar  -->
-    <nav class="navbar navbar-expand-md bg-white navbar-light py-2 ps-3 fixed-top">
-        <!-- navbar collapse for sm screen  -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light py-2 ps-3 fixed-top">
+        <!-- navbar collapse for lg screen  -->
         <div class="container">
-            <a href="#" class="navbar-brand "> <img class='d-none d-sm-block' src="img/logo.png" style="width:200px; ">
+            <a href="#" class=" "> <img class='d-none d-sm-block' src="img/logo.png" style="width:200px; ">
                 <!-- icon for sm screen  -->
                 <img class='d-block d-sm-none' src="img/logo.png" style="width:130px; "> <!-- icon for lg screen  -->
             </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-                <!-- hamburger menu  -->
-                <span class="navbar-toggler-icon"> </span>
 
-            </button>
+            <div class=" d-flex justify-content-end ">
+                <!--
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#search">
+                    -- search menu  --
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" fill="currentColor"
+                        class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg>
+
+                </button>
+                <span class="pe-2"></span>
+
+            -->
+
+                <button class="navbar-toggler nav-control" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navmenu">
+                    <!-- hamburger menu  -->
+                    <span class="navbar-toggler-icon"> </span>
+
+                </button>
+            </div>
 
             <div class="collapse navbar-collapse" id="navmenu">
                 <!-- navigation tabs -->
+
+
+
                 <ul class="navbar-nav ms-auto">
+
+                    <form class="d-flex btn-group pe-2 pt-4 pb-2 pt-md-4 pt-xl-0 pb-xl-0">
+                        <input class="form-control  me-0"  size="35" type="search" placeholder="Want help?" aria-label="Search">
+                        <button type="button" class="btn btn-secondary ">Search</button>
+
+                    </form>
+
+
+
+
 
                     <li class="nav-item">
                         <a href="#Home" class="nav-link"> <span class='textcolor'>Home </span></a>
@@ -79,6 +124,7 @@
                         <a href="#contacts" class="nav-link"> <span class='textcolor'>Contacts</span></a>
                     </li>
                 </ul>
+
 
             </div>
 
@@ -316,8 +362,8 @@
                 <!--first row 2 Cakes Page-->
                 <div class="d-flex justify-content-start align-items-center pt-3">
 
-                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; height: 17rem;">
-                        <img src="img/cakes/bf.jpg" style="width:210 px;" class="card-img-top" alt="...">
+                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem;">
+                        <img src="img/cakes/bf.jpg" class="card-img-top" alt="...">
 
                         <div class="card-body">
                             <h5> Black Forest<br />
@@ -329,8 +375,8 @@
                     </div>
                     <div class="pe-3"></div>
 
-                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; height: 17rem;">
-                        <img src="img/cakes/ch.png" style="width:210 px;" class="card-img-top" alt="...">
+                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; ">
+                        <img src="img/cakes/ch.png" class="card-img-top" alt="...">
 
                         <div class="card-body">
                             <h5> Chocolate Cake<br />
@@ -346,8 +392,8 @@
 
                 <!--second row 2 Cakes Page-->
                 <div class="d-flex justify-content-start align-items-center pt-3">
-                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; height: 17rem;">
-                        <img src="img/cakes/sb.png" style="width:210 px;" class="card-img-top" alt="...">
+                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; ">
+                        <img src="img/cakes/sb.png" class="card-img-top" alt="...">
 
                         <div class="card-body">
                             <h5> Strawberry Cake<br />
@@ -359,8 +405,8 @@
                     </div>
                     <div class="pe-3"></div>
 
-                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; height: 17rem;">
-                        <img src="img/cakes/wf.png" style="width:210 px;" class="card-img-top" alt="...">
+                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; ">
+                        <img src="img/cakes/wf.png" class="card-img-top" alt="...">
 
                         <div class="card-body">
                             <h5> White Forest<br />
@@ -377,8 +423,8 @@
 
                 <!--third row here-->
                 <div class="d-flex justify-content-start align-items-center pt-3">
-                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; height: 17rem;">
-                        <img src="img/cakes/kc.png" style="width:210 px;" class="card-img-top" alt="...">
+                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; ">
+                        <img src="img/cakes/kc.png" class="card-img-top" alt="...">
 
                         <div class="card-body">
                             <h5> Kit-Kat Cake<br />
@@ -390,8 +436,8 @@
                     </div>
                     <div class="pe-3"></div>
 
-                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; height: 17rem;">
-                        <img src="img/cakes/pap.png" style="width:210 px;" class="card-img-top" alt="...">
+                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; ">
+                        <img src="img/cakes/pap.png" class="card-img-top" alt="...">
 
                         <div class="card-body">
                             <h5> Pineapple Cake<br />
@@ -406,8 +452,8 @@
 
                 <!--Fourth row here-->
                 <div class="d-flex justify-content-start align-items-center pt-3">
-                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; height: 17rem;">
-                        <img src="img/cakes/mg.png" style="width:210 px;" class="card-img-top" alt="...">
+                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; ">
+                        <img src="img/cakes/mg.png" class="card-img-top" alt="...">
 
                         <div class="card-body">
                             <h5> Mango Cake<br />
@@ -419,8 +465,8 @@
                     </div>
                     <div class="pe-3"></div>
 
-                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; height: 17rem;">
-                        <img src="img/cakes/rv.png" style="width:210 px;" class="card-img-top" alt="...">
+                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; ">
+                        <img src="img/cakes/rv.png" class="card-img-top" alt="...">
 
                         <div class="card-body">
                             <h5> Red Velvet Cake<br />
@@ -445,8 +491,8 @@
                 <!--first row 3 Cakes Page-->
                 <div class="d-flex justify-content-start align-items-center pt-4">
 
-                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; height: 18rem;">
-                        <img src="img/cakes/bf.jpg" style="width:210 px;" class="card-img-top" alt="...">
+                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; ">
+                        <img src="img/cakes/bf.jpg" class="card-img-top" alt="...">
 
                         <div class="card-body">
                             <h5> Black Forest<br />
@@ -458,11 +504,11 @@
                     </div>
                     <div class="pe-4"></div>
 
-                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; height: 18rem;">
-                        <img src="img/cakes/ch.png" style="width:210 px;" class="card-img-top" alt="...">
+                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; ">
+                        <img src="img/cakes/ch.png" class="card-img-top" alt="...">
 
                         <div class="card-body">
-                            <h5> Chocolate Cake<br />
+                            <h5> Chocolate <br />
                                 <h6>Rs.1100 </h6>
                             </h5>
 
@@ -471,8 +517,8 @@
                     </div>
                     <div class="pe-4"></div>
 
-                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; height: 18rem;">
-                        <img src="img/cakes/mg.png" style="width:210 px;" class="card-img-top" alt="...">
+                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; ">
+                        <img src="img/cakes/mg.png" class="card-img-top" alt="...">
 
                         <div class="card-body">
                             <h5> Mango Cake<br />
@@ -488,11 +534,11 @@
 
                 <!--second column 3 Cakes Page-->
                 <div class="d-flex justify-content-start align-items-center pt-4">
-                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; height: 18rem;">
-                        <img src="img/cakes/sb.png" style="width:210 px;" class="card-img-top" alt="...">
+                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; ">
+                        <img src="img/cakes/sb.png" class="card-img-top" alt="...">
 
                         <div class="card-body">
-                            <h5> Strawberry Cake<br />
+                            <h5> Strawberry<br />
                                 <h6>Rs.1300 </h6>
                             </h5>
 
@@ -501,11 +547,11 @@
                     </div>
                     <div class="pe-4"></div>
 
-                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; height: 18rem;">
-                        <img src="img/cakes/wf.png" style="width:210 px;" class="card-img-top" alt="...">
+                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; ">
+                        <img src="img/cakes/wf.png" class="card-img-top" alt="...">
 
                         <div class="card-body">
-                            <h5> White Forest<br />
+                            <h5> WhiteForest<br />
                                 <h6>Rs.1100 </h6>
                             </h5>
 
@@ -514,8 +560,8 @@
                     </div>
                     <div class="pe-4"></div>
 
-                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; height: 18rem;">
-                        <img src="img/cakes/rv.png" style="width:210 px;" class="card-img-top" alt="...">
+                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; ">
+                        <img src="img/cakes/rv.png" class="card-img-top" alt="...">
 
                         <div class="card-body">
                             <h5> Red Velvet<br />
@@ -532,8 +578,8 @@
 
                 <!--third row here-->
                 <div class="d-flex justify-content-start align-items-center pt-4">
-                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; height: 18rem;">
-                        <img src="img/cakes/kc.png" style="width:210 px;" class="card-img-top" alt="...">
+                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; ">
+                        <img src="img/cakes/kc.png" class="card-img-top" alt="...">
 
                         <div class="card-body">
                             <h5> KitKat Cake<br />
@@ -545,11 +591,11 @@
                     </div>
                     <div class="pe-4"></div>
 
-                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; height: 18rem;">
-                        <img src="img/cakes/pap.png" style="width:210 px;" class="card-img-top" alt="...">
+                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; ">
+                        <img src="img/cakes/pap.png" class="card-img-top" alt="...">
 
                         <div class="card-body">
-                            <h5> Pineapple Cake<br />
+                            <h5> Pineapple<br />
                                 <h6>Rs.1700 </h6>
                             </h5>
 
@@ -558,11 +604,11 @@
                     </div>
                     <div class="pe-4"></div>
 
-                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; height: 18rem;">
-                        <img src="img/cakes/bs.png" style="width:210 px;" class="card-img-top" alt="...">
+                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; ">
+                        <img src="img/cakes/bs.png" class="card-img-top" alt="...">
 
                         <div class="card-body">
-                            <h5> Butter Scotch<br />
+                            <h5> Butterscotch<br />
                                 <h6>Rs.1300 </h6>
                             </h5>
 
@@ -587,8 +633,8 @@
                 <!--first row 4 Cakes Page-->
                 <div class="d-flex justify-content-start align-items-center pt-4">
 
-                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; height: 20rem;">
-                        <img src="img/cakes/bf.jpg" style="width:210 px;" class="card-img-top" alt="...">
+                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; ">
+                        <img src="img/cakes/bf.jpg" class="card-img-top" alt="...">
 
                         <div class="card-body">
                             <h5> Black Forest<br />
@@ -600,8 +646,8 @@
                     </div>
                     <div class="pe-3"></div>
 
-                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; height: 20rem;">
-                        <img src="img/cakes/ch.png" style="width:210 px;" class="card-img-top" alt="...">
+                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; ">
+                        <img src="img/cakes/ch.png" class="card-img-top" alt="...">
 
                         <div class="card-body">
                             <h5> Chocolate Cake<br />
@@ -613,8 +659,8 @@
                     </div>
                     <div class="pe-3"></div>
 
-                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; height: 20rem;">
-                        <img src="img/cakes/mg.png" style="width:210 px;" class="card-img-top" alt="...">
+                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; ">
+                        <img src="img/cakes/mg.png" class="card-img-top" alt="...">
 
                         <div class="card-body">
                             <h5> Mango Cake<br />
@@ -626,8 +672,8 @@
                     </div>
                     <div class="pe-3"></div>
 
-                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; height: 20rem;">
-                        <img src="img/cakes/pap.png" style="width:210 px;" class="card-img-top" alt="...">
+                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; ">
+                        <img src="img/cakes/pap.png" class="card-img-top" alt="...">
 
                         <div class="card-body">
                             <h5> Pineaple Cake<br />
@@ -641,8 +687,8 @@
 
                 <!--second row 4 Cakes Page-->
                 <div class="d-flex justify-content-start align-items-center pt-3">
-                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; height: 20rem;">
-                        <img src="img/cakes/sb.png" style="width:210 px;" class="card-img-top" alt="...">
+                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; ">
+                        <img src="img/cakes/sb.png" class="card-img-top" alt="...">
 
                         <div class="card-body">
                             <h5> Strawberry Cake<br />
@@ -654,8 +700,8 @@
                     </div>
                     <div class="pe-3"></div>
 
-                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; height: 20rem;">
-                        <img src="img/cakes/wf.png" style="width:210 px;" class="card-img-top" alt="...">
+                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; ">
+                        <img src="img/cakes/wf.png" class="card-img-top" alt="...">
 
                         <div class="card-body">
                             <h5> White Forest<br />
@@ -667,8 +713,8 @@
                     </div>
                     <div class="pe-3"></div>
 
-                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; height: 20rem;">
-                        <img src="img/cakes/rv.png" style="width:210 px;" class="card-img-top" alt="...">
+                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; ">
+                        <img src="img/cakes/rv.png" class="card-img-top" alt="...">
 
                         <div class="card-body">
                             <h5> Red Velvet<br />
@@ -680,8 +726,8 @@
                     </div>
                     <div class="pe-3"></div>
 
-                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; height: 20rem;">
-                        <img src="img/cakes/kc.png" style="width:210 px;" class="card-img-top" alt="...">
+                    <div class="card text-center align-items-center p-1 pt-3 " style="width: 20rem; ">
+                        <img src="img/cakes/kc.png" class="card-img-top" alt="...">
 
                         <div class="card-body">
                             <h5> Kitkat Cake<br />
@@ -781,7 +827,7 @@
                 <!--third row here-->
                 <div class="d-flex justify-content-start align-items-center pt-3">
                     <div class="card text-center align-items-center" style="width: 20rem;">
-                        <img src="img/party/colorsmoke.jpg" style="width:210 px;" class="card-img-top" alt="...">
+                        <img src="img/party/colorsmoke.jpg" class="card-img-top" alt="...">
 
                         <div class="card-body">
                             <h5> Smokes <br />
@@ -905,7 +951,7 @@
                     <div class="pe-4"></div>
 
                     <div class="card text-center align-items-center" style="width: 20rem;">
-                        <img src="img/party/colorsmoke.jpg" style="width:210 px;" class="card-img-top" alt="...">
+                        <img src="img/party/colorsmoke.jpg" class="card-img-top" alt="...">
 
                         <div class="card-body">
                             <h5> Smokes <br />
@@ -1039,7 +1085,7 @@
                 <!--second column 4 Cakes Page-->
                 <div class="d-flex justify-content-start align-items-center pt-3">
                     <div class="card text-center align-items-center" style="width: 20rem;">
-                        <img src="img/party/colorsmoke.jpg" style="width:210 px;" class="card-img-top" alt="...">
+                        <img src="img/party/colorsmoke.jpg" class="card-img-top" alt="...">
 
                         <div class="card-body">
                             <h5> Smokes <br />
